@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="text-center font-bold mb-2 py-4 text-4xl text text-rose-500 bg-slate-200">Bachelor Life Calculator
+        </h2>
+    </header>
+    <main>
+        <div class=" grid gap-7  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full">
+
+            <!-- div 01 -->
+            <div class="my-auto ">
+                <div class="h-full">
+                    <img class="my-auto" src="img/cost-estimates.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- div 02 -->
+            <div class=" bg-slate-100">
+                <div class="calculation-div text-center m-3">
+
+
+                    <h2 class="m-1 py-1 text-xl font-bold text text-black bg-slate-200">Total Income</h2>
+                    <p>Income : <input class="border border-black p-1 m-1 " type="number" placeholder="00.00"
+                            name="" id="incomeInput"></p>
+                    <p class="bg-red-500" id="empty1"></p>
+                    <h2 class="m-1 py-1 text-xl font-bold text text-black bg-slate-200">Total Expense</h2>
+
+                    <p>Food : <input class="border border-black p-1 m-1 " type="number" placeholder="00.00" name=""
+                            id="foodInput"></p>
+
+                    <p>Rent :<input class="border border-black p-1 m-1 " type="number" placeholder="00.00" name=""
+                            id="rentInput"></p>
+
+                    <p>Cloths :<input class="border border-black p-1 m-1 " type="number" placeholder="00.00" name=""
+                            id="clothsInput"></p>
+
+                    <button id="calculateBtn"
+                        class=" text-xl text-white font-semibold btn bg-purple-400 m-2 drop-shadow-lg rounded px-8 py-1 rounded-lg"
+                        type="button" type="submit"> Calculate</button>
+                    <h2 class="m-1 py-1 lg:text-2xl md:text-xl font-bold text text-rose-500 bg-slate-200">Total Expense:
+                        <span id="totalExpense">
+                            00 </span>
+                    </h2>
+                    <p class="bg-red-700" id="empty2"></p>
+
+                    <h2 class="m-1 py-1 lg:text-2xl md:text-xl font-bold text text-black bg-slate-200">Balance: <span
+                            id="balanceTotal"> 00
+                        </span></h2>
+                    <div>
+                        <p>Save:<input class="w-24 border border-black p-1 m-1 " type="number" placeholder="Savings %"
+                                name="" id="savingInput"> %
+                            <button id="saveBtn"
+                                class="  text-xl text-white font-semibold btn bg-purple-400 m-2 drop-shadow-lg rounded px-8 py-1 rounded-lg"
+                                type="button" type="submit"> Save
+                            </button>
+                        </p>
+
+                        <h2 class="m-1 py-1 lg:text-2xl md:text-xl font-bold text text-rose-500 bg-slate-200"> Savings
+                            amount:
+                            <span id="savingAmount"> 00 </span>
+                        </h2>
+                        <h2 class="m-1 py-1 lg:text-2xl md:text-xl font-bold text text-black bg-slate-200"> Remaining
+                            Balance:
+                            <span id="remainingAmount">00 </span>
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="./src/app2.js"></script>
+
+    <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
